@@ -8,13 +8,11 @@ with URI values stored in:
 
 MediaPlayer.db
 
-## 🔎 Purpose
+## Purpose
 
 This tool reconstructs cache filenames using:
 
 SHA256(URI_string_UTF8)
-→ dash-separated hexadecimal
-→ append "-0-<width>-<height>"
 
 It allows deterministic correlation between:
 
@@ -22,7 +20,7 @@ It allows deterministic correlation between:
 - Cached thumbnail artefacts
 - Original media file paths
 
-## ⚙️ Features
+## Features
 
 - Auto-discovers URI/path-like columns in MediaPlayer.db
 - Supports SHA1 and SHA256
@@ -30,5 +28,5 @@ It allows deterministic correlation between:
 - Supports multiple thumbnail sizes
 - Outputs structured CSV report
 
-## 🚀 Usage
+## Usage
 python mediaplayer_cache_matcher.py --cache-dir "C:\Users\username\AppData\Local\Packages\Microsoft.ZuneMusic_8wekyb3d8bbwe\LocalCache\Image" --db "MediaPlayer.db path"
